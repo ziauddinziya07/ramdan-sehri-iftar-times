@@ -79,9 +79,6 @@ function TableRow(props) {
 
     useEffect(() => {
         if (gregorianDay === todayDay && gregorianMonth === todayMonth) {
-            console.log(todayDate);
-            console.log(iftar);
-            console.log(sehri);
             if (todayDate < iftar && todayDate > sehri) {
                 changeCountDownDate(iftar, "Iftar");
             } else if (todayDate < sehri) {
