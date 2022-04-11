@@ -11,7 +11,10 @@ function TableRow(props) {
     ];
     const { Fajr, Maghrib } = rowData.timings;
     const dayName = gregorian.weekday.en.substring(0, 3);
-    const [gregorianDay, gregorianYear] = [gregorian.day, gregorian.year];
+    const [gregorianDay, gregorianYear] = [
+        Number(gregorian.day),
+        gregorian.year,
+    ];
     // since JS treats months from 0-11
     const gregorianMonth = gregorian.month.number - 1;
 
@@ -47,7 +50,7 @@ function TableRow(props) {
         gregorianYear,
         gregorianMonth,
         // checking whether Next Day is Ramadan day or not
-        index < 29 ? Number(gregorianDay) + 1 : gregorianDay,
+        index < 29 ? gregorianDay + 1 : gregorianDay,
         nextDayFajrHour,
         nextDayfajrMinute
     );
@@ -73,14 +76,21 @@ function TableRow(props) {
     // Code to change the CountDown Date in the App & CountDown Component.
     const todayDate = new Date();
     const [todayDay, todayMonth] = [todayDate.getDate(), todayDate.getMonth()];
+
     useEffect(() => {
-        if (gregorianDay == todayDay && gregorianMonth === todayMonth) {
-            if (todayDate < iftar) {
+        if (gregorianDay === todayDay && gregorianMonth === todayMonth) {
+            console.log(todayDate);
+            console.log(iftar);
+            console.log(sehri);
+            if (todayDate < iftar && todayDate > sehri) {
                 changeCountDownDate(iftar, "Iftar");
+            } else if (todayDate < sehri) {
+                changeCountDownDate(sehri, "Sehri");
             } else {
                 changeCountDownDate(nextDaySehri, "Sehri");
             }
         }
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, []);
 
     function formatTime(num) {

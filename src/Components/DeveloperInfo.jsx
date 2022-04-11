@@ -15,6 +15,7 @@ function DeveloperInfo() {
                 <a
                     href="https://viral-wedding-invitations.netlify.app/"
                     target="_blank"
+                    rel="noreferrer"
                 >
                     <h1 className="small-link">
                         Viral Wedding Invitation{" "}
@@ -24,7 +25,11 @@ function DeveloperInfo() {
                     </h1>
                 </a>
                 <h4>Or Contact:</h4>
-                <a href="https://ziauddinziya07.github.io" target="_blank">
+                <a
+                    href="https://ziauddinziya07.github.io"
+                    target="_blank"
+                    rel="noreferrer"
+                >
                     <h1>
                         Ziauddin Ziya{" "}
                         <sup>
@@ -42,6 +47,7 @@ function DeveloperInfo() {
                     <a
                         href="https://github.com/ziauddinziya07"
                         target="_blank"
+                        rel="noreferrer"
                         className="icon-link"
                     >
                         <FontAwesomeIcon icon={faGithub} size="xl" />
@@ -49,6 +55,7 @@ function DeveloperInfo() {
                     <a
                         href="https://www.linkedin.in/in/ziauddinziya"
                         target="_blank"
+                        rel="noreferrer"
                         className="icon-link"
                     >
                         <FontAwesomeIcon icon={faLinkedin} size="xl" />
@@ -56,6 +63,7 @@ function DeveloperInfo() {
                     <a
                         href="https://www.hackerrank.com/ziauddinziya07?hr_r=1"
                         target="_blank"
+                        rel="noreferrer"
                         className="icon-link"
                     >
                         <FontAwesomeIcon icon={faHackerrank} size="xl" />

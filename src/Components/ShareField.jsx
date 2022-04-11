@@ -17,14 +17,14 @@ function ShareField(props) {
 
     function shareInWhatsApp() {
         // Encoding the sender name
-        let name = value.length != 0 ? value : props.name; // If user click directly on share button without entering name
+        let name = value.length !== 0 ? value : props.name; // If user click directly on share button without entering name
         const tempName = name;
 
         name = replaceAll(name, " ", "_");
         name = replaceAll(name, ".", "-");
         let res = "";
         for (let i = 0, l = name.length; i < l; i++) {
-            if (name[i] != "_" && name[i] != "-") {
+            if (name[i] !== "_" && name[i] !== "-") {
                 const currentChar = name.charCodeAt(i);
                 if (
                     (currentChar >= 87 && currentChar <= 90) ||

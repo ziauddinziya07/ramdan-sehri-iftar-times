@@ -14,12 +14,14 @@ function FromNote() {
     }
 
     const temp = window.location.href;
-    const res = temp.split("/?")[1].split("#")[0];
+    let res = "";
+    if (temp.split("/?")[1] !== undefined)
+        res = temp.split("/?")[1].split("#")[0];
 
     // Decoding the sender name from the href
     let name = "";
-    for (let i = 0; i < res.length; i++) {
-        if (!(res[i] == "_" || res[i] == "-")) {
+    for (let i = 0, l = res.length; i < l; i++) {
+        if (!(res[i] === "_" || res[i] === "-")) {
             const currentChar = res.charCodeAt(i);
             if (
                 (currentChar >= 65 && currentChar <= 68) ||

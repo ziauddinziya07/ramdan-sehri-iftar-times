@@ -67,7 +67,7 @@ function Table(props) {
 
         // Executed if failed to get user's location
         function failedToGetGeoLocation(err) {
-            if (err.code == 1) {
+            if (err.code === 1) {
                 console.log("User denied location permission!");
                 setLocation("User denied location permission!");
             }
@@ -87,7 +87,7 @@ function Table(props) {
             const { hijri } = obj.date;
             const [day, month] = [Number(hijri.day), hijri.month.number];
 
-            return month == 9 && (day >= 1 || day <= 30);
+            return month === 9 && (day >= 1 || day <= 30);
         }
     }, []);
 
