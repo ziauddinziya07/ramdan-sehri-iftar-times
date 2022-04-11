@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-family: "Mulish", sans-serif;
+    color: #1e7b67;
+    text-align: center;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png");
+    overflow-x: hidden;
+}
+
+/* Navbar Section */
+.navbar {
+    padding: 1% 7%;
+    background-color: #ff6b6b;
+    color: white;
+}
+
+.navbar-brand {
+    padding: 0;
+}
+
+.navbar-brand h1 {
+    margin: 0;
+}
+
+/* Slide Section */
+#slide {
+    /* margin-top: 30px; */
+    text-align: center;
+}
+
+#slide .container-fluid {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+#slide .slide-content {
+    color: white;
+    padding: 4% 7%;
+    background-color: #ffd93d;
+}
+
+#slide .slide-content img {
+    width: 50%;
+}
+
+#slide .wish {
+    padding: 7%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+/* Dev Quote Section */
+#dev-quote {
+    background: url("./assets/images/bg-3.jpg") repeat fixed 100%;
+}
+
+#dev-quote .inner-content {
+    padding: 7% 7%;
+    color: white;
+}
+
+#dev-quote .inner-content h4,
+h2 {
+    text-align: justify;
+    text-align-last: center;
+    line-height: 1.5;
+    margin-bottom: 0%;
+}
+
+#dev-quote .inner-content h3 {
+    margin-bottom: 2rem;
+}
+
+/* Table Section */
+#table-section {
+    padding: 7% 7% 3%;
+    transition: all 1s ease-in .5s;
+}
+
+#table-section #red-text {
+    color: red;
+}
+
+#table-section .icon {
+    margin-right: 10px;
+}
+
+#table-section .table {
+    margin-top: 20px;
+    border: 3px solid #dee2e6;
+}
+
+#table-section .table-striped {
+    margin-bottom: 0%;
+}
+
+#table-section .table td {
+    font-weight: 500;
+}
+
+/* Note Section */
+#note {
+    background-color: #ff6b6b;
+    color: white;
+    padding: 3% 7%;
+    text-align: justify;
+    text-align-last: center;
+}
+
+
+#note .note-text {
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 1px;
+}
+
+#note h3,
+#note h5 {
+    line-height: 1.5;
+}
+
+/* Count Down Section */
+#count-down {
+    color: white;
+    padding: 7% 7%;
+}
+
+#count-down .row {
+    margin: 0px;
+}
+
+#count-down .main {
+    background-color: #1e7b67;
+}
+
+#count-down .col-lg-5,
+.col-lg-7 {
+    padding: 0px;
+}
+
+#count-down .bg-container {
+    background: url("./assets/images/clock-bg.jpg");
+    background-repeat: round;
+}
+
+#count-down .title {
+    background-color: #ff6b6b82;
+    /* background-color: #6bcb785b; */
+    padding: 20px;
+}
+
+#count-down .title h1,
+#count-down .title h4 {
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 2px;
+    font-size: 2rem;
+}
+
+#count-down .title h1 {
+    line-height: 1.5;
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 0px;
+}
+
+#count-down .title .content {
+    border: 2px solid hsla(0, 0%, 100%, 0.495);
+}
+
+#count-down .row {
+    background-color: #feb139;
+}
+
+#count-down .clock {
+    background-color: #feb139;
+}
+
+#count-down .clock .content {
+    padding: 20px;
+}
+
+#count-down .clock ul {
+    list-style: none;
+    margin: 0px;
+}
+
+#count-down .clock li {
+    display: inline-block;
+    margin: 0px 20px;
+    border: 1px solid hsla(0, 0%, 100%, 0.497);
+    padding: 20px;
+    line-height: 1;
+}
+
+#count-down .clock .num {
+    margin: 0px;
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+#count-down .clock .caption {
+    margin: 0px;
+}
+
+/* From-note Section */
+#from-note .from {
+    background-color: #1e7b67;
+    padding: 3% 7%;
+    color: white;
+}
+
+#from-note .from h3 {
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+#from-note .from h1 {
+    font-family: "Roboto Slab", serif;
+    line-height: 1.5;
+}
+
+#from-note .share-field {
+    padding: 3% 7%;
+}
+
+#from-note .share-field h1 {
+    line-height: 1.5;
+    font-family: "Great Vibes", cursive;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+#from-note .share-field .form-control {
+    width: 40%;
+    display: inline-block;
+}
+
+#from-note .share-field .btn {
+    background-color: #1e7b67;
+}
+
+#from-note .share-field .icon {
+    margin-right: 10px;
+}
+
+/* Developer Info */
+#developer-info {
+    background-color: #343a40;
+    color: white;
+    padding: 15% 15%;
+}
+
+#developer-info a {
+    text-decoration: none;
+    color: white;
+}
+
+#developer-info h1 {
+    font-family: "Roboto Slab", serif;
+    line-height: 2;
+}
+
+#developer-info p {
+    margin-bottom: 0px;
+}
+
+#developer-info .icon-section {
+    margin-top: 20px;
+}
+
+#developer-info .icon-link {
+    padding: 0px 10px;
+}
+
+/* Audio Icon */
+.swing-icon {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    animation: swing 1s both infinite;
+}
+
+@keyframes swing {
+    20% {
+        -webkit-transform: rotate(15deg);
+        transform: rotate(15deg);
+    }
+    40% {
+        -webkit-transform: rotate(-10deg);
+        transform: rotate(-10deg);
+    }
+    60% {
+        -webkit-transform: rotate(5deg);
+        transform: rotate(5deg);
+    }
+    80% {
+        -webkit-transform: rotate(-5deg);
+        transform: rotate(-5deg);
+    }
+    100% {
+        -webkit-transform: rotate(0);
+        transform: rotate(0);
+    }
+}
+
+#play-btn {
+    color: #1e7b67;
+    border: 2px solid #1e7b67;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+/* Modal Section */
+#my-modal .modal-content {
+    border: 2px solid #1e7b67;
+    border-radius: 2%;
+}
+
+#my-modal h2 {
+    font-size: 1.5rem;
+}
+#my-modal .btn {
+    background-color: #1e7b67;
+    color: white;
+}
+
+/* Responsive Work */
+@media (max-width: 990px) {
+    /* Navbar Section */
+    .navbar {
+        padding: 2% 7%;
+    }
+    .navbar-brand h1 {
+        font-size: 1.5rem;
+    }
+
+    /* Slide Section */
+    #slide .slide-content {
+        padding-top: 18%;
+    }
+
+    #slide .slide-content img {
+        width: 100%;
+    }
+
+    #slide .wish h1 {
+        font-size: 2rem;
+        margin: 0%;
+    }
+
+    /* Dev Quote Section */
+    #dev-quote .inner-content {
+        padding: 10% 7%;
+    }
+
+    #dev-quote .inner-content h4 {
+        margin-bottom: 2rem;
+    }
+
+    /* Table Section */
+    #table-section {
+        padding: 10% 7%;
+    }
+
+    /* Note Section */
+    #note {
+        padding: 10% 7%;
+    }
+
+    /* Count Down Section */
+    #count-down {
+        padding: 10% 7%;
+    }
+    #count-down h4 {
+        font-size: 1.2rem;
+    }
+    #count-down .title h1 {
+        font-size: 2rem;
+    }
+    #count-down .clock .num {
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+    #count-down .clock li {
+        padding: 15px;
+        margin: 0px 10px;
+    }
+
+    /* From Note Section */
+
+    #from-note .from {
+        padding: 7%;
+    }
+    #from-note .from h3 {
+        font-size: 1rem;
+    }
+    #from-note .from h1 {
+        font-size: 1.8rem;
+        margin: 0%;
+    }
+    #from-note .share-field {
+        padding: 7%;
+    }
+    #from-note .share-field h1 {
+        margin-bottom: 1rem;
+    }
+
+    #from-note .share-field .form-control {
+        width: 60%;
+    }
+
+    /* Developer Info */
+    #developer-info h4 {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+    #developer-info h1 {
+        font-size: 1.5rem;
+    }
+    #developer-info .small-link {
+        font-size: 1rem;
+    }
+
+    /* Modal Section */
+    #my-modal h1 {
+        font-size: 1.5rem;
+    }
+    #my-modal h2 {
+        font-size: 1rem;
+    }
+}
+
+/* Responsive Work for 420px screen width */
+@media (max-width: 420px) {
+    /* Slide Section*/
+    .slide-content-bg .title {
+        margin-top: 30%;
+    }
+
+    /* Counter Section */
+    #count-down .clock li {
+        padding: 10px;
+    }
+}
